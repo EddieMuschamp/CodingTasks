@@ -9,7 +9,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "C:\\Users\\eddie\\CodingTasks\\C++\\${fileBasenameNoExtension}.exe"
+                "C:\\Users\\eddie\\CodingTasks\\C++\\exes\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
