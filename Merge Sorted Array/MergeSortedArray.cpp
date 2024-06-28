@@ -22,16 +22,21 @@ public:
             }
             totalLen--;
         }
+        while (n > 0) {
+            nums1[totalLen-1] = nums2[n-1];
+            n--;
+            totalLen--;
+        }
         return nums1;
     }
 };
 
 int main(int argc, char const *argv[])
 {
-    vector<int> nums1 = {1, 2, 8, 10, 0, 0, 0, 0, 0};
-    int m = 4;
-    vector<int> nums2 = {2, 5, 6, 7, 8};
-    int n = 5;
+    vector<int> nums1 = {2, 0};
+    int m = 1;
+    vector<int> nums2 = {1};
+    int n = 1;
     Solution test1;
     nums1 = test1.merge(nums1, m, nums2, n);
     for(int i = 0; i < nums1.size(); i++){
