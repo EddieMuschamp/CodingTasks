@@ -33,10 +33,10 @@ public:
 
 int main(int argc, char const *argv[])
 {
-    vector<int> nums1 = {2, 0};
-    int m = 1;
-    vector<int> nums2 = {1};
-    int n = 1;
+    vector<int> nums1 = {2, 3, 8, 10, 0, 0, 0};
+    int m = 4;
+    vector<int> nums2 = {3, 7, 11};
+    int n = 3;
     Solution test1;
     nums1 = test1.merge(nums1, m, nums2, n);
     for(int i = 0; i < nums1.size(); i++){
@@ -45,5 +45,4 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
-
-
+//Test
