@@ -29,6 +29,7 @@ int main(int argc, char const *argv[])
 {
     string s = "A man, a plan, a canal: Panama";
     Solution test1;
+    cout<<"iaudnfsa"<<endl;
     cout<<boolalpha<<test1.isPalindrome(s)<<endl;
     return 0;
 }
