@@ -8,5 +8,5 @@ def decode(message_file):
   for word in words.values():  #Iterates through dictionary values
     print(word.strip("\n"), end = " ") #Prints only words
 
-message = open("message.txt", "r")
+message = open("C:/Users/User/Coding/CodingTasks/Python/Decoder/message.txt", "r")
 decode(message)
