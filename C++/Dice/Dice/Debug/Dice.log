@@ -1,0 +1,5 @@
+﻿  Definitions.cpp
+  Dice.cpp
+  Generating Code...
+C:\Users\User\Portfolio\Projects\Dice\Dice\Dice\Dice.cpp(14,23): warning C4018: '<': signed/unsigned mismatch
+  Dice.vcxproj -> C:\Users\User\Portfolio\Projects\Dice\Dice\Debug\Dice.exe
