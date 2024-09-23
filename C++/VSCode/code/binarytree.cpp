@@ -2,21 +2,21 @@
 #include <iostream>
 using namespace std;
 
+
+//Definition for a binary tree node.
+struct TreeNode {
+     int val;
+     TreeNode *left;
+     TreeNode *right;
+     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ };
+ 
 class Solution {
 public:
-    bool canConstruct(string ransomNote, string magazine) {
-        for(int i = 0; i < ransomNote.length(); i++){
-            size_t found = magazine.find(ransomNote[i]);
-            if (found != string::npos){
-                magazine.erase(found,1);
-            }
-            else{
-                cout<<"no";
-                return false;
-            }
-        }
-        cout<<"yes";
-        return true;
+    int maxDepth(TreeNode* root) {
+        
     }
 };
 
@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
     string ransom = "ghjkl";
     string magazine = "gghglplpjl";
     Solution test1;
-    test1.canConstruct(ransom, magazine);
+    //test1.canConstruct(ransom, magazine);
     return 0;
 }
 
