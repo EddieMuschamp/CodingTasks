@@ -155,17 +155,40 @@ public:
         
         return ranges;
     }
+
+//########################################################################################################################################//
+
+    bool isIsomorphic(string s, string t) {
+        map<char, char> charMap;
+        
+        for (int i = 0; i < s.length(); i++){
+            if(charMap.find(s[i]) == charMap.end()){
+                for (auto& it : charMap) {
+                    if (it.second == t[i]) {
+                        return false;
+                    }
+                }
+                charMap[s[i]] = t[i]; 
+            }
+            
+            else if(t[i] != charMap[s[i]]){
+                return false;
+            }
+        }
+        return true;
+    }
+
 };
 
 //########################################################################################################################################//
 
 int main(int argc, char const *argv[])
 {
-    string sub = "abc";
-    string word = "afdgbsdfc";
+    string s = "badc";
+    string t = "baba";
     Solution test1;
     bool result;
-    result = test1.isSubsequence(sub, word);
+    result = test1.isIsomorphic(s, t);
     cout<<result<<endl;
     return 0;
 }
